@@ -1,0 +1,8 @@
+---
+  #CUCUMBER SETUP
+default: -p api -p json --format progress
+json: --format json --out=features/log/report_result.json
+html: --format html --out=features/log/report_result.html
+
+#AMBIENT VARIABLES
+api: API=https://sandbox.moip.com.br/v2/orders/

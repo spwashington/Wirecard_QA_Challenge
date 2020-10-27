@@ -4,10 +4,18 @@ Feature: Payment
     - In Wirecard account dashboard user can manager yours payment order
 
     Background: Open account dashboard
-        Given a valid account with "user_email" and "password"
+        When access account sandbox site
+        Given a valid account with "your_sandbox_email" and "your_sandbox_password"
         Then can be accessed wirecard dashboard
 
-    # Scenario: Create a new payment order
+    @PayOrder
+    Scenario: Create a new payment order with API Request
+        Given json body: "createPaymentOrder.json"
+        Then api send a post request to create a payment order and return code "201" with status "CREATED" and a valid order id
+        And is possible check this payment order in wirecard account dashboard and status is "Aguardando"
 
-
-    # Scenario: Create a new payment
+    @Pay
+    Scenario: Create a new payment
+        Given json body: "createPayment.json" 
+        Then api send a post request to create a payment to orderId: "ORD-1ZUA54GDNNXZ" and return code "201" with status "IN_ANALYSIS" and a valid order id
+        And is possible check this payment in wirecard account dashboard and status is "Pago"

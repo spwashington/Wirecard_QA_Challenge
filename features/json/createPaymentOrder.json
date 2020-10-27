@@ -1,0 +1,21 @@
+{  
+    "ownId":"teste0",
+    "amount":{  
+       "currency":"BRL",
+       "subtotals":{  
+          "shipping":1500
+       }
+    },
+    "items":[  
+       {  
+          "product":"Descrição do pedido",
+          "category":"CLOTHING",
+          "quantity":1,
+          "detail":"Camiseta estampada branca",
+          "price":9500
+       }
+    ],
+    "customer":{  
+       "id":"CUS-TK2S7QYGYQS8"
+    }
+ }
