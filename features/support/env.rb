@@ -18,8 +18,8 @@ Capybara.ignore_hidden_elements = false
 $API_PaymentOrder_URL = "https://sandbox.moip.com.br/v2/orders/"
 
 $API_AUTH = {
-	:username => 'GGVET2XMMZGE80O0PYSYOPW8FFNOMQPP', 
-  :password => 'RQNDUC8QLY2SBIOTDRUUCTZBHTUE58EA05FN8PTS'
+	:username => 'ADD_API_TOKEN', 
+  :password => 'ADD_API_KEY'
 }
 
 $API_HEADER = { 
