@@ -16,6 +16,8 @@ Cucumber | RSpec | Selenium Webdrive | HTTParty | Ruby | Capybara | Report Build
 - Set folder "wirecard_qa_challenge" in your terminal
 - To execute test cases:
     - In terminal execute: cucumber -t @Pay
+    
     or
+    
     - In terminal execute: cucumber -t @PayOrder
 
